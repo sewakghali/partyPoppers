@@ -1,0 +1,18 @@
+[
+{
+    "id": "img1",
+    "src": "https://picsum.photos/200/?random=1"
+},
+{
+    "id": "img2",
+    "src": "https://picsum.photos/200/?random=2"
+},
+{
+    "id": "img3",
+    "src": "https://picsum.photos/200/?random=3"
+},
+{
+    "id": "img4",
+    "src": "https://picsum.photos/200/?random=4"
+}
+]

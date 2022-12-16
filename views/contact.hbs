@@ -1,0 +1,23 @@
+<br>
+<section id="contact">
+    <form action="" method="post">
+        <label for="name"> Name (Required)</label>
+        <input type="text" maxlength="30" id="name" name="name" required placeholder="e.g. John" />
+        <label for="email"> Email (Required) </label>
+        <input type="email" name="email" id="email" required maxlength="50" placeholder="e.g. John@example.com" />
+
+        <label for="phone">Phone (Required)</label>
+        <input type="text" name="phone" id="phone" pattern="[0-9 ]+" required maxlength="10" minlength="10"
+            placeholder="e.g. 1234567890" />
+
+        <label for="city"> City (Required)</label>
+        <input type="text" name="city" id="city" required maxlength="30" placeholder="e.g. Toronto" />
+
+        <label for="message"> Message (250 characters maximum)</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+        <!-- <br> -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="desc"></div>
+</section>

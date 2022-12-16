@@ -1,0 +1,244 @@
+@font-face {
+  font-family: thirsty;
+  src: url('../resources/fonts/ThirstyRoughRegular.otf');
+}
+
+html {
+  position: absolute;
+  padding: 0;
+  /* background: #777575; */
+  /* border: 15px #777575 solid; */
+  top: -8px;
+  bottom: 0;
+  left: calc((100% - 700px)/2);
+  right: calc((100% - 700px)/2);
+  background-color: #dadada;
+}
+
+body {
+  border: 10px #dadada solid;
+  background-color: #dadada;
+  padding: 0 5% 0 5%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+nav {
+  /* align-self: center; */
+  /* left: 0; */
+  /* right: 0; */
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /* flex-flow: ; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(12, 1fr); */
+  border-radius: 20px;
+  /* position:relative; */
+}
+
+#navName{
+  font-family: thirsty;
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(right,rgb(0, 255, 0) ,rgb(255, 0, 0), rgb(252, 210, 0), red, blue);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text ;
+  /* flex: 0 4; */
+  /* row-gap: 50%; */
+}
+
+nav button{
+  border: none;
+  background-color: #71717100;
+}
+
+#logoImg {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  /* text-align: left; */
+  max-width: 150%;
+  width: 200px;
+  transform: translate(-15px ,10px);
+  /* background-color: rgb(255, 255, 255); */
+  /* box-shadow: 0 0 20px 20px rgb(105, 27, 7); */
+}
+
+#navAbout {
+  /* grid-column-start:5; */
+  /* grid-column-end: 7; */
+  text-align: right;
+  font-family: thirsty;
+  /* column-gap: 0 20px; */
+  /* flex: ; */
+}
+
+#navGallery {
+  /* grid-column-start: 7; */
+  /* grid-column-end: 9; */
+  text-align: right;
+  font-family: thirsty;
+  text-decoration:underline;
+}
+
+#navServices {
+  /* grid-column-start: 9; */
+  /* grid-column-end: 11; */
+  text-align: right;
+  font-family: thirsty;
+}
+
+#navContact {
+  /* grid-column-start: 11; */
+  /* grid-column-end: 13; */
+  text-align: right;
+  font-family: thirsty;
+}
+
+#gallery > div{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;;
+}
+
+#imgs{
+  /* display: grid; */
+  /* grid-template-columns: 5% 90% 5%;
+  grid-template-rows: repeat(3, 1fr); */
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+#imgs img{
+  /* width: 200px; */
+  /* max-width: 400%; */
+  /* flex: 0 100; */
+}
+
+#contact {
+  background-color: #b48ce9;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  row-gap: 1em;
+}
+
+button[type="submit"] {
+  grid-column: 2;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+input{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+textarea {
+  border: 1px solid;
+  resize: vertical;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+#gallery {
+  background-color: #a8c1cd;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+#gallery-imgs{
+  border-radius: px;
+  padding: 8px;
+}
+
+#imgs {
+  margin: 10px;
+  /* padding: 5px; */
+  /* background-color: red; */
+}
+
+img {
+  max-width: 100%;
+  padding: 8px;
+  /* transform: translate(20% ); */   
+  /* padding:; */
+  /* image-orientation: flip; */
+}
+
+input:invalid {
+  /* border-color: red; */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    left: 0;
+    right: 0;
+    border: 8px #dadada solid;
+    font-size: 0.8rem;
+  }
+
+  nav {
+    padding: 10px;
+    row-gap: 5px;
+  }
+
+  #navname {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    text-align: center;
+  }
+
+  #navabout {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+    grid-row: 2;
+  }
+
+  #navgallery {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    text-align: center;
+    grid-row: 2;
+  }
+
+  #navcontact {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    text-align: right;
+    grid-row: 2;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 0.5em;
+  }
+
+  button[type="submit"] {
+    grid-column: 1;
+  }
+}
