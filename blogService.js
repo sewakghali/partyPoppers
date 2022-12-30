@@ -8,14 +8,18 @@ module.exports.initialize = ()=>{
         fs.readFile('./resources/json/baby_shower.json', (err, data)=>{
             if(err) reject('Cannot Load Images');
             imgArr = JSON.parse(data);
+        });
+        // fs.readFile('./resources/json/bday_boy.json', (err, data)=>{
+        //     if(err) reject('Cannot Load Images');
+        //     imgArr = JSON.parse(data);
             resolve();
-        })
+        // })
     });
 }
 
 module.exports.getAllImgs = ()=>{
     return new Promise((resolve, reject)=>{
         if(imgArr.length > 0) resolve(imgArr);
-        reject('No image files');
+        return reject('No image files');
     });
 }
