@@ -5,12 +5,12 @@
     "handlebars": "^4.7.7",
     "nodemon": "^2.0.20",
     "save": "^2.9.0",
-    "umd": "^3.0.3"
+    "umd": "^3.0.3",
+    "yarn": "^1.22.19"
   },
   "scripts": {
-    "build" : "npm install",
-    "start": "node server.js",
-    "serve" : "node server.js"
+    "build": "echo 'build started...'",
+    "start": "node server.js"
   },
   "name": "partypoppers_ca",
   "version": "1.0.0",
